@@ -1,0 +1,144 @@
+body{
+    min-height:100%;
+    font-family:Bad Script;
+	font-size: bolder;
+	background-color: #f4f5f6;
+    background: #91eae4;  /* fallback for old browsers */
+    background: linear-gradient(to bottom, #f4f5f6, #9b4dca, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1{
+    background: purple;
+    color:white;
+    margin: 0;
+    padding:10px 28px;
+    font-weight: normal;
+}
+input{
+    background: white;
+    width: 80%;
+    box-sizing: border-box;
+    height:50px ;
+    font-size: 20px;
+    font-weight: 0.5px;
+    text-align: center;
+    border: 3px solid gray;
+	border-radius: 2em;
+    color: gray;
+	margin-left: 2em;
+	margin-top: 2em;
+	
+}
+input:focus{
+    background: #edf1f5;
+    border: 3px solid purple;
+    outline:none;
+    color: black;
+}
+
+span{
+    margin-right: 10px;
+    text-align:center;
+    height:50px;
+    width: 0;
+    opacity: 0;
+    -webkit-transition:0.3s;
+    transition: 0.3s linear;
+}
+
+i{
+    cursor: pointer;
+}
+button{
+    background-color:purple;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+	font-weight: bold;
+    border-radius:4px;
+    font-family: Helvetica, Arial, sans-serif
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: plum;
+    color: black;
+    border: 2px solid white;
+}
+
+#buttons{
+    display:inline-block;
+    text-align:center;
+    margin-left: 6em;
+	padding-bottom: 2em;
+    position:absolute;
+    bottom:5px;
+}
+#todo{
+    margin: 0 auto ;
+    box-shadow: 0 0 1em black;
+    max-width: 400px;
+    height:100%;
+    background:white;
+    position:relative;
+}
+
+.todos{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 2em;
+}
+.todos li{
+    background: #f7f7f7;
+    height:50px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.todos li:nth-child(2n){
+    background:#edf1f5;
+}
+.todos li:hover span{
+    width: 50px;
+    opacity: 1.0;
+    margin-left: 5px;
+}
+.display{
+    display:none;
+    transition: 0.3s linear;
+}
+.checked{
+    color:gray;
+    text-decoration:line-through;
+}
+
+.fa-pencil-alt{
+    float: right;
+    padding-top: 8px;
+}
+.fa-trash-alt{
+    color:#7f7fd5;
+}
+
+/*  if screen size less than 450px, resize tips lists and close btn so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    #todo{
+        width:100%;
+        height:100%;
+    }
+}

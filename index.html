@@ -1,0 +1,39 @@
+<DOCTYPE html!>
+
+    <head>
+        <title>My ToDo List </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "Stylesheet" href = "css/todo.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+        <link rel = "shortcut icon" href="assets/favicon.ico">
+        <link rel="icon" type="image/gif" href="assests/animated_favicon1.gif" >
+     </head>
+
+    <body>
+
+        <div id = "todo">
+			<h1> MY ToDo List  </h1> 
+            <i id="pencil" class="fas fa-pencil-alt"></i>
+            <input type = "text" placeholder="Add a Todo and Press Enter">
+
+            <ul class="todos">
+                
+                <li><span><i class="fas fa-trash-alt"></i></span>Buy groceries</li>
+            </ul>
+
+            <div id= "buttons">
+                <button class="save">Save ToDo</button>
+                <button class="clear">Clear All</button>
+            </div>
+        </div>
+
+        <div id = "overlay">
+           <a href="javascript:void(0)" class="closebtn">&times;</a>
+           <ul class="tips">
+
+            </ul>
+            
+        </div>
+        <script src="Js/todo2.js"></script>
+    </body>
